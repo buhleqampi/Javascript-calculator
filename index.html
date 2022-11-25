@@ -8,43 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <div class="container text-center">
-    <div class="row">
-    <div class="col">
-        Column
-    </div>
-    <div class="col">
-        Column
-    </div>
-    <div class="col">
-        Column
-    </div>
-    </div>
-    </div> -->
+
     <div class="container">
-    <input type="digits" placeholder=" 0">
+
+    <input type="digits" placeholder=" 0" id="output">
     <div class="calculator">
-        <button class = "butt is-clear">AC</button>
-        <button class = "butt">DEL</button>
-        <button class = "butt">&divide;</button>
-        <button class = "butt">1</button>
-        <button class = "butt">2</button>
-        <button class = "butt">3</button>
-        <button class = "butt">&times;</button>
-        <button class = "butt">4</button>
-        <button class = "butt">5</button>
-        <button class = "butt">6</button>
-        <button class = "butt">&plus;</button>
-        <button class = "butt">7</button>
-        <button class = "butt">8</button>
-        <button class = "butt">9</button>
-        <button class = "butt">&minus;</button>
-        <button class = "butt is-zero">0</button>
-        <button class = "butt">.</button>
-        <button class = "butt is-equals">&equals;</button>
+        <button class = "butt is-clear" onclick="clearSum()">AC</button>
+        <button class = "butt" onclick="clearSum()">DEL</button>
+        <button class = "butt" onclick="addToSum('&divide;')">&divide;</button>
+        <button class = "butt" onclick="addToSum('1')">1</button>
+        <button class = "butt" onclick="addToSum('2')">2</button>
+        <button class = "butt" onclick="addToSum('3')">3</button>
+        <button class = "butt"onclick="addToSum('3')">&times;</button>
+        <button class = "butt"onclick="addToSum('4')">4</button>
+        <button class = "butt"onclick="addToSum('5')">5</button>
+        <button class = "butt"onclick="addToSum('6')">6</button>
+        <button class = "butt"onclick="addToSum('3')">&plus;</button>
+        <button class = "butt"onclick="addToSum('7')">7</button>
+        <button class = "butt"onclick="addToSum('8')">8</button>
+        <button class = "butt"onclick="addToSum('9')">9</button>
+        <button class = "butt"onclick="addToSum('&minus;')">&minus;</button>
+        <button class = "butt"onclick="addToSum('.')">.</button>
+        <button class = "butt is-zero"onclick="addToSum('0')">0</button>
+        <button class = "butt is-equals"onclick="evaluateSum('&equals;')">&equals;</button>
 
     </div>
     </div>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
     </body>
     </html>
