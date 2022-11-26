@@ -4,20 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .container {
     max-width:400px;
     border: 3px solid black;
-    margin: 10vh auto 0 auto;
+    margin: auto;
     border-radius: 6px;
     background-color: white; 
      /* box-shadow: inset; */
+    /* margin-bottom: 10vh; */
 }
 body {
     padding-top: 20px;
     padding-bottom: 20px;
     background: blueviolet;
+    /* margin-bottom: 10vh; */
 }
 .container input {
     background: white;
@@ -87,7 +90,7 @@ grid-gap: 5px;
 } 
 }
 
-/* @media screen and (max-width: 700px) {
+/* @media screen and (max-width: 720px) {
 
 
-} */
+}  */

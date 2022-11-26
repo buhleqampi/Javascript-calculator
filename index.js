@@ -6,7 +6,7 @@ let screen = document.querySelector('.digits');
 // buttons calculating
 function addToSum(number){
     document.getElementById("output").value += number;
-    allowComa = true;
+ 
 }
 // dot appearing once
 function symbol (number) {
