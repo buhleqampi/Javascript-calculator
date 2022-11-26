@@ -29,7 +29,7 @@ body {
     padding:20px;
     text-align:right;
     font-size: 30px;
-    /* border-bottom: 3px solid black; */
+    
 
     
 }
@@ -40,16 +40,6 @@ padding: 10px;
 grid-gap: 5px;
 }
 
-/* .butt {
-    background: gray;
-    border:1px solid gray;
-    padding:20px;
-    text-align: center;
-    color: #EEE;
-    font-size:15px;
-    cursor: pointer;
-    border-radius: 10px;
-} */
 .butt, .is-zero, .is-clear, .is-equals {
     border: 0.5px solid #efc3e6 ;
     line-height: 100px;
@@ -60,8 +50,12 @@ grid-gap: 5px;
     align-items: space-evenly;
     background: #efc3e6;
 }
-
-
+.butt:hover {
+    background-color: #9c89b8;
+}
+/* .is-clear,.is-equals:hover {
+    background-color:#efc3e6 ;
+} */
 .is-clear,.is-equals {
     grid-column:span 2;
 
