@@ -1,16 +1,44 @@
 let sum = "";
-let operator = document.getElementById("butt");
+let InputValue = document.getElementById("butt");
+let allowComa = true;
+let screen = document.querySelector('.digits');
 
-function addToSum(operator){
-document.getElementById("output").innerHTML += operator
-};
-
-function evaluateSum() {
-sum = eval(sum);
-document.getElementById("output").innerHTML = operator;
+// buttons calculating
+function addToSum(number){
+    document.getElementById("output").value += number;
+    allowComa = true;
 }
-
+// dot appearing once
+function symbol (number) {
+    document.getElementById("output").value += number;
+    allowComa = true;
+    }
+    
+    
+    function showDecimal (number) {
+        if (allowComa === true) {
+            document.getElementById("output").value +=  number;
+            allowComa = false;
+        }
+    }
+// AC
 function clearSum() {
 sum = "";
-document.getElementById("output").innerHTML = operator;
+document.getElementById("output").value = InputValue;
+}
+// DEL
+function delSum (){
+let number = document.getElementById("output").value; 
+let result = number.slice (0,-1);
+document.getElementById("output").value = result;
+}
+// =
+function evaluateSum() {
+let y = document.getElementById("output").value;
+sum = eval(y); 
+document.getElementById("output").value = sum;
+if (sum ===undefined) {
+document.getElementById("output").value = "";
+toggleAllowComma();
+}
 }

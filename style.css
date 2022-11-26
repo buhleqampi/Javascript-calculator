@@ -7,12 +7,12 @@
 }
 
 .container {
-    max-width:300px;
+    max-width:400px;
     border: 3px solid black;
-    margin: 0 auto;
+    margin: 10vh auto 0 auto;
     border-radius: 6px;
-    background-color: white;
-    box-shadow: inset;
+    background-color: white; 
+     /* box-shadow: inset; */
 }
 body {
     padding-top: 20px;
@@ -34,20 +34,33 @@ body {
 
 .calculator {
 display: grid;
-grid-template-columns:auto auto auto auto;
+/* grid-template-areas: '';     */
+grid-template-columns:1fr 1fr 1fr 1fr;
 padding: 10px;
 grid-gap: 5px;
 }
 
-.butt {
+/* .butt {
     background: gray;
     border:1px solid gray;
     padding:20px;
+    text-align: center;
     color: #EEE;
-    font-size:25px;
+    font-size:15px;
     cursor: pointer;
     border-radius: 10px;
+} */
+.butt, .is-zero, .is-clear, .is-equals {
+    border: 0.5px solid;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    align-items: space-evenly;
 }
+
+
 .is-clear,.is-equals {
     grid-column:span 2;
 
@@ -59,3 +72,22 @@ grid-gap: 5px;
 .is-equals {
     background: green;
 }
+
+@media screen and (max-width: 300px) {
+    .container {
+        width: 100%;
+    }
+    .butt {
+        display: grid;
+        grid-template-columns: repeat (4,1fr);
+        transform: scale(0.8);
+        width: 90%;
+        height: auto;
+        
+} 
+}
+
+/* @media screen and (max-width: 700px) {
+
+
+} */
